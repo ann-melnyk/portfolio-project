@@ -1,10 +1,73 @@
 /* font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif; */
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --main-text-color: #272142;
+}
 
-h1 {
+h1,
+h2,
+h3 {
+  color: black;
   font-family: "Playfair Display", serif;
 }
 
+h1 {
+  font-size: 96px;
+}
+
 p {
+  color: var(--main-text-color);
   font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 150px 20px;
+}
+
+.hero p {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero h2 {
+  color: var(--main-text-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2;
+}
+
+.btn-branding {
+  background: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding:hover {
+  background: var(--primary-color);
+}
+
+.btn-branding:active {
+  background: var(--primary-color) !important;
+  border: var(--primary-color) !important;
+}
+
+.btn-branding:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.btn-branding:focus-visible {
+  color: white;
+  background: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
