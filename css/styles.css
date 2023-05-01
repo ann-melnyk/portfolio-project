@@ -7,7 +7,8 @@ font-family: 'Poppins', sans-serif; */
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   color: black;
   font-family: "Playfair Display", serif;
 }
@@ -110,7 +111,7 @@ nav li {
 }
 
 .content-container {
-  padding: 150px 20px;
+  padding: 70px 20px;
 }
 
 .content-container h1 {
@@ -131,7 +132,7 @@ nav li {
 }
 
 .content {
-  padding: 30px;
+  margin: 30px;
 }
 
 .work-content {
@@ -146,9 +147,53 @@ nav li {
   color: var(--primary-color);
 }
 
+footer {
+  margin: 60px 0;
+}
+
+footer .work-inquiry {
+  background: var(--outline-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .work-inquiry h4 {
+  font-size: 48px;
+}
+
+footer .work-inquiry p {
+  font-size: 18px;
+  margin: 0;
+}
+
+footer .email-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a {
+  color: var(--primary-color);
+  background: var(--outline-color);
+  font-size: 18px;
+  margin: 0 20px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+
 .nav-link:hover,
+.email-link:hover,
 .active {
   color: var(--primary-color) !important;
+}
+
+footer .social-links a:hover {
+  background: var(--primary-color);
+  color: white;
 }
 
 .btn-branding:hover {
@@ -202,5 +247,8 @@ nav li {
   .content-container h1 {
     font-size: 50px;
     line-height: 1;
+  }
+  footer .work-inquiry h4 {
+    font-size: 40px;
   }
 }
